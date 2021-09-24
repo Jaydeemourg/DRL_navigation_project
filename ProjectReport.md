@@ -11,17 +11,19 @@ The goal of the D Q-Learning agent is to decide which actions to take within the
 The following hyperparameters are selected for the training: 
 
 * number of episodes = 1700 
-    - The number of episodes was a heuristic from seeing how previous runs performed.The final model solved the problem (average score of 13 over 100 episodes) at episode 432.
+    - The number of games the agent will play
 
 * max timesteps = 1000 
-    - The max timesteps at 2000 was in an attempt to not cut-off well-performing agents too early.
+    - The max timesteps at 1000 was in an attempt to not cut-off well-performing agents too early
 
 * epsilon max = 1.0
+    - This is the exploration rate at which an agent randomly decides its action rather than prediction
 
 * epsilon min = 0.01
-
+    - The agent should explore at least this amount
+    
 * epsilon decay rate = 0.995
-
+    - This parameter represents a decrease in the number of explorations as it becomes better at playing games
 
 
 ## Plot of Rewards
